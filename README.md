@@ -47,7 +47,7 @@ Nhập URL: `http://localhost:3000` -> Send
 
 Ảnh test:
 
-![Secure without Header](public\result/1a.Secure_withoutHeader.png)
+![Secure without Header](public/result/1a.Secure_withoutHeader.png)
 
 Chuyển sang tab Authorization.
 
@@ -78,6 +78,7 @@ Nhấn nút Send để gửi request.
 Ảnh test:
 ![Basic Auth](public/result/1a_AuthenticationRequire.png)
 >>>>>>> 0a9410f8e6fe85e9b6541acfb83455b1a9c35e11
+
 
 
 
