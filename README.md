@@ -21,6 +21,11 @@ Cài dependencies:
 ---
 # 1a. Basic Authentication (basic_auth.js)
 
+## Demo Account
+Username: admin
+
+Password: 12345
+
 Chạy server: `node basic_auth.js`
     
 Server chạy tại http://localhost:3000 
@@ -29,7 +34,6 @@ Server chạy tại http://localhost:3000
 
 2. Ở phần Method, chọn GET.
 
-<<<<<<< HEAD
 Nhập URL: `http://localhost:3000` -> Send
 
 
@@ -39,7 +43,7 @@ Nhập URL: `http://localhost:3000` -> Send
 - GET: `http://localhost:3000/public` -> Send
 
 Ảnh test:
-![Basic Auth public](public\result\1a_BasicAuth_public.png)
+![Basic Auth public](public/result/1a_BasicAuth_public.png)
 
 
 - GET: `http://localhost:3000/secure` [without Header] -> Send
@@ -47,7 +51,7 @@ Nhập URL: `http://localhost:3000` -> Send
 
 Ảnh test:
 
-![Secure without Header](simple_auth\public\result\1a.Secure_withoutHeader.png)
+![Secure without Header](public/result/1a.Secure_withoutHeader.png)
 
 Chuyển sang tab Authorization.
 
@@ -58,25 +62,58 @@ Trong Auth Type, chọn Basic Auth.
     Password: 12345
 
 - GET: `http://localhost:3000/secure` [Header] -> Send
-![Secure Header](simple_auth\public\result\1a_BasicAuth.png)
+![Secure Header](public/result/1a_BasicAuth.png)
 
 - GET: `http://localhost:3000/secure` [WrongPass] -> Send
-![Secure wrong](simple_auth\public\result\1a.Secure_wrong.png)
-=======
-Nhập URL: `http://localhost:3000`
+![Secure wrong](public/result/1a.Secure_wrong.png)
 
-3. Chuyển sang tab Authorization.
+# 2.Cookie Authentication (cookie_auth.js)
 
-Trong Auth Type, chọn Basic Auth.
+## Demo Account
 
-- Username: admin
+Username: admin
 
-- Password: 12345
+Password: 12345
 
-Nhấn nút Send để gửi request.
+Chạy server: `node cookie_auth.js`
+    
+Server chạy tại http://localhost:3001
+
+a. Login
+
+1. Tạo một request mới.
+
+2. Ở phần Method, chọn POST.
+
+- POST: `http://localhost:3001/login` 
+
+- Body (JSON): { "username": "admin", "password": "123" } -> Send
 
 Ảnh test:
-![Basic Auth](public/result/1a_AuthenticationRequire.png)
->>>>>>> 0a9410f8e6fe85e9b6541acfb83455b1a9c35e11
+
+![login fail](public/result/1b_login_fail.png)
+
+- GET: ` http://localhost:3001/profile`
+Ảnh test:
+![profile fail](public/result/1b_profile_fail.png)
+
+
+- POST: `http://localhost:3001/login` 
+
+- Body (JSON): { "username": "admin", "password": "12345" } -> Send
+
+Ảnh test:
+
+![login success](public/result/1b_login_success.png)
+
+- GET: ` http://localhost:3001/profile`
+Ảnh test:
+![profile success](public/result/1b_profile_success.png.png)
+
+---
+## Cookie in MongoDB
+Sau khi đăng nhập, mở MongoDB:
+![mongodb](public/result/1b_mongodb.png)
+
 
 
