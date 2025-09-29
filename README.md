@@ -32,9 +32,8 @@ Server chạy tại http://localhost:3000
 
 1. Tạo một request mới.
 
-2. Ở phần Method, chọn GET.
-
-Nhập URL: `http://localhost:3000` -> Send
+2. Ở phần Method
+- GET: `http://localhost:3000` -> Send
 
 
 Ảnh test:
@@ -62,15 +61,10 @@ Trong Auth Type, chọn Basic Auth.
     Password: 12345
 
 - GET: `http://localhost:3000/secure` [Header] -> Send
-![Secure Header](public/result/1a_BasicAuth.png)
+![Secure Header](public/result/1a.Secure_Header.png.png)
 
 - GET: `http://localhost:3000/secure` [WrongPass] -> Send
 ![Secure wrong](public/result/1a.Secure_wrong.png)
-<<<<<<< HEAD
-=======
-=======
-Nhập URL: `http://localhost:3000`
->>>>>>> f96b9a8ab5f3ae03403090362e4037846543701e
 
 # 2.Cookie Authentication (cookie_auth.js)
 
