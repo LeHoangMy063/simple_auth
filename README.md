@@ -29,6 +29,7 @@ Server chạy tại http://localhost:3000
 
 2. Ở phần Method, chọn GET.
 
+<<<<<<< HEAD
 Nhập URL: `http://localhost:3000` -> Send
 
 
@@ -61,5 +62,21 @@ Trong Auth Type, chọn Basic Auth.
 
 - GET: `http://localhost:3000/secure` [WrongPass] -> Send
 ![Secure wrong](simple_auth\public\result\1a.Secure_wrong.png)
+=======
+Nhập URL: `http://localhost:3000`
+
+3. Chuyển sang tab Authorization.
+
+Trong Auth Type, chọn Basic Auth.
+
+- Username: admin
+
+- Password: 12345
+
+Nhấn nút Send để gửi request.
+
+Ảnh test:
+![Basic Auth](public/result/1a_AuthenticationRequire.png)
+>>>>>>> 0a9410f8e6fe85e9b6541acfb83455b1a9c35e11
 
 
