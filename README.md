@@ -66,7 +66,7 @@ Trong Auth Type, chọn Basic Auth.
 - GET: `http://localhost:3000/secure` [WrongPass] -> Send
 ![Secure wrong](public/result/1a.Secure_wrong.png)
 
-# 2.Cookie Authentication (cookie_auth.js)
+# 1b. Cookie Authentication (cookie_auth.js)
 
 ## Demo Account
 
@@ -113,6 +113,7 @@ a. Login
 ## Cookie in MongoDB
 Sau khi đăng nhập, mở MongoDB:
 ![mongodb](public/result/1b_mongodb.png)
+
 
 
 
