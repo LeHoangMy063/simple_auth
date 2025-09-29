@@ -47,7 +47,7 @@ Nhập URL: `http://localhost:3000` -> Send
 
 Ảnh test:
 
-![Secure without Header](simple_auth/public\result/1a.Secure_withoutHeader.png)
+![Secure without Header](public\result/1a.Secure_withoutHeader.png)
 
 Chuyển sang tab Authorization.
 
@@ -58,10 +58,10 @@ Trong Auth Type, chọn Basic Auth.
     Password: 12345
 
 - GET: `http://localhost:3000/secure` [Header] -> Send
-![Secure Header](simple_auth/public/result/1a_BasicAuth.png)
+![Secure Header](public/result/1a_BasicAuth.png)
 
 - GET: `http://localhost:3000/secure` [WrongPass] -> Send
-![Secure wrong](simple_auth/public/result/1a.Secure_wrong.png)
+![Secure wrong](public/result/1a.Secure_wrong.png)
 =======
 Nhập URL: `http://localhost:3000`
 
@@ -78,6 +78,7 @@ Nhấn nút Send để gửi request.
 Ảnh test:
 ![Basic Auth](public/result/1a_AuthenticationRequire.png)
 >>>>>>> 0a9410f8e6fe85e9b6541acfb83455b1a9c35e11
+
 
 
 
